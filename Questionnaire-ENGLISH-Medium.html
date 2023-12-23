@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test - LearnEase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0e7e7;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            padding: 70px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>LearnEase</h1>
+    </header>
+
+    <section>
+        <h2>English Test - Medium</h2>
+        <form id="testForm">
+            <label for="question1">1. What is the tallest mountain on earth?</label>
+            <input type="radio" name="question1" value="Mount Everest">Mount Everest
+            <input type="radio" name="question1" value="Mount Fuji">Mount Fuji
+            <input type="radio" name="question1" value="Mount Vinson">Mount Vinson
+            <hr>
+            <label for="question2">2. What is the tallest building on earth?</label>
+            <input type="radio" name="question2" value="Burj Khalifa">Burj Khalifa
+            <input type="radio" name="question2" value="Big Ben">Big Ben
+            <input type="radio" name="question2" value="Eiffel Tower">Eiffel Tower
+            <hr>
+            <label for="question3">3. How long does a leaf usually take to grow from a seed at minimum?</label>
+            <input type="radio" name="question3" value="Two Weeks">Two Weeks
+            <input type="radio" name="question3" value="Four Weeks">Four Weeks
+            <input type="radio" name="question3" value="One Week">One Week
+            <hr>
+            <label for="question4">4. What's the color that fits the most that can represent loyalty?</label>
+            <input type="radio" name="question4" value="Blue">Blue
+            <input type="radio" name="question4" value="Purple">Purple
+            <input type="radio" name="question4" value="Teal">Teal
+            <hr>
+            <label for="question5">5. What color represents royalty that dates back to ancient times?</label>
+            <input type="radio" name="question5" value="Purple">Purple
+            <input type="radio" name="question5" value="Blue">Blue
+            <input type="radio" name="question5" value="Violet">Violet
+            <hr>
+            <label for="question6">6. What does the color Black usually symbolize?</label>
+            <input type="radio" name="question6" value="Evil">Evil
+            <input type="radio" name="question6" value="Power and Restraint">Power and Restraint
+            <input type="radio" name="question6" value="Havoc and Chaos">Havoc and Chaos
+            <hr>
+            <label for="question7">7. What fish climbs up waterfalls?</label>
+            <input type="radio" name="question7" value="Goby Fish">Goby Fish
+            <input type="radio" name="question7" value="Barracuda">Barracuda
+            <input type="radio" name="question7" value="Goldfish">Goldfish
+            <hr>
+            <label for="question8">8. How fast can light travel?</label>
+            <input type="radio" name="question8" value="186,000 Miles per second">186,000 Miles per second 
+            <input type="radio" name="question8" value="200,000 Miles per second">200,000 Miles per second
+            <input type="radio" name="question8" value="394,000 Miles per second">394,000 Miles per second
+            <hr>
+            <label for="question9">9. Who wrote the tragic book, Hamlet?</label>
+            <input type="radio" name="question9" value="William Shakespeare">William Shakespeare
+            <input type="radio" name="question9" value="H.P Lovecraft">H.P Lovecraft
+            <input type="radio" name="question9" value="Isaac Newton">Isaac Newton
+            <hr>
+            <label for="question10">10. Who discovered the color blue?</label>
+            <input type="radio" name="question10" value="Egyptians">Egyptians 
+            <input type="radio" name="question10" value="Americans">Americans
+            <input type="radio" name="question10" value="Africans">Africans
+            <hr>
+            <label for="question11">11. What occasion does a human celebrate the moment they we're born?</label>
+            <input type="radio" name="question11" value="Birthday">Birthday
+            <input type="radio" name="question11" value="Festival">Festival
+            <input type="radio" name="question11" value="Christmas">Christmas
+            <hr>
+            <label for="question12">12. How would you describe a humid area?</label>
+            <input type="radio" name="question12" value="Scorching">Scorching
+            <input type="radio" name="question12" value="Freezing">Freezing
+            <input type="radio" name="question12" value="Damp and Hot">Damp and Hot
+            <hr>
+            <label for="question13">13. What is evolution?</label>
+            <input type="radio" name="question13" value="Development">Development
+            <input type="radio" name="question13" value="Redundance">Redundance
+            <input type="radio" name="question13" value="Reverting">Reverting
+            <hr>
+            <label for="question14">14. What is Topography?</label>
+            <input type="radio" name="question14" value="Studying a land surface">Studying a land surface
+            <input type="radio" name="question14" value="Mapmaking">Mapmaking
+            <input type="radio" name="question14" value="Scanning">Scanning
+            <hr>
+            <label for="question15">15. What is craftsmanship?</label>
+            <input type="radio" name="question15" value="Skill in a craft">Skill in a craft
+            <input type="radio" name="question15" value="Skill in art">Skill in art
+            <input type="radio" name="question15" value="Crafting something">Crafting something
+            <hr>
+
+
+            <button type="button" onclick="submitTest()">Submit</button>
+        </form>
+        <div id="results"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 LearnEase</p>
+    </footer>
+
+    <script>
+       function submitTest() {
+            // Implement logic to collect and process user's answers
+            // For demonstration purposes, let's assume correct answers
+            const correctAnswers = {
+                question1: 'Mount Everest',
+                question2: 'Burj Khalifa',
+                question3: 'Four Weeks',
+                question4: 'Blue',
+                question5: 'Purple',
+                question6: 'Power and Restraint',
+                question7: 'Goby Fish',
+                question8: '186,000 Miles per second',
+                question9: 'William Shakespeare',
+                question10: 'Egyptians',
+                question11: 'Birthday',
+                question12: 'Damp and Hot',
+                question13: 'Development',
+                question14: 'Studying a land surface',
+                question15: 'Skill in a craft',
+
+                // Add correct answers for more questions
+            };
+
+            // Get user's selected answers
+            const userAnswers = {};
+            document.querySelectorAll('input[type="radio"]:checked').forEach(input => {
+                const questionName = input.name;
+                const answerValue = input.value;
+                userAnswers[questionName] = answerValue;
+            });
+
+            // Compare user's answers with correct answers
+            const correctCount = Object.keys(correctAnswers).filter(question => {
+                return userAnswers[question] === correctAnswers[question];
+            }).length;
+
+            // Display results
+            const resultsContainer = document.getElementById('results');
+            resultsContainer.innerHTML = `<h2>Results</h2>`;
+            resultsContainer.style.display = 'block';
+
+            if (correctCount === Object.keys(correctAnswers).length) {
+                resultsContainer.innerHTML += '<p>Congratulations! You got all the answers correct!</p>';
+            } else {
+                resultsContainer.innerHTML += `<p>You got ${correctCount} out of ${Object.keys(correctAnswers).length} correct.</p>`;
+                resultsContainer.innerHTML += '<p>Correct Answers:</p>';
+                resultsContainer.innerHTML += '<ul>';
+                Object.keys(correctAnswers).forEach(question => {
+                    resultsContainer.innerHTML += `<li>${question}: ${correctAnswers[question]}</li>`;
+                });
+                resultsContainer.innerHTML += '</ul>';
+            }
+        }
+    </script>
+
+</body>
+</html>

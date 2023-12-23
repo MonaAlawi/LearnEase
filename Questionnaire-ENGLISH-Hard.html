@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test - LearnEase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0e7e7;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            padding: 25px;
+            margin-bottom: 80px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>LearnEase</h1>
+    </header>
+
+    <section>
+        <h2>English Test - Hard</h2>
+        <form id="testForm">
+            <label for="question1">1. Who painted the Mona Lisa portrait</label>
+            <input type="radio" name="question1" value="Vanh Gogh">Vanh Gogh
+            <input type="radio" name="question1" value="Bob Ross">Bob Ross
+            <input type="radio" name="question1" value="Leonardo Da Vinci">Leonardo Da Vinci
+            <hr>
+            <label for="question2">2. What is the color theory?</label>
+            <input type="radio" name="question2" value="A Study of pairing">A Study of pairing
+            <input type="radio" name="question2" value="A theory for colors">A theory for colors
+            <input type="radio" name="question2" value="A Study of colors">A Study of colors
+            <hr>
+            <label for="question3">3. What is the recorded smallest country on earth?</label>
+            <input type="radio" name="question3" value="Vatican City">Vatican City
+            <input type="radio" name="question3" value="San Marino">San Marino
+            <input type="radio" name="question3" value="Tuvalu">Tuvalu
+            <hr>
+            <label for="question4">4. Which planet has the most volcanoes?</label>
+            <input type="radio" name="question4" value="Jupiter">Jupiter
+            <input type="radio" name="question4" value="Venus">Venus
+            <input type="radio" name="question4" value="Earth">Earth
+            <hr>
+            <label for="question5">5. What does the word "Ubiquitous" mean?</label>
+            <input type="radio" name="question5" value="Found everywhere">Found everywhere
+            <input type="radio" name="question5" value="Mysterious and secretive">Mysterious and secretive
+            <input type="radio" name="question5" value="Uncommon">Uncommon
+            <hr>
+            <label for="question6">6. What is a completely colorless substance?</label>
+            <input type="radio" name="question6" value="Water">Water
+            <input type="radio" name="question6" value="Air">Air
+            <input type="radio" name="question6" value="Plastic">Plastic
+            <hr>
+            <label for="question7">7. What do octopi need to climb better?</label>
+            <input type="radio" name="question7" value="Tougher skin">Tougher skin
+            <input type="radio" name="question7" value="Slippier tentacles">Slippier tentacles
+            <input type="radio" name="question7" value="Stronger grip">Stronger grip
+            <hr>
+            <label for="question8">8. What color can you describe as no color?</label>
+            <input type="radio" name="question8" value="Black">Black 
+            <input type="radio" name="question8" value="White">White
+            <input type="radio" name="question8" value="Gray">Gray
+            <hr>
+            <label for="question9">9. What does the word "frigid" mean?</label>
+            <input type="radio" name="question9" value="Very cold">Very cold
+            <input type="radio" name="question9" value="Very hot">Very hot
+            <input type="radio" name="question9" value="Antarctic Weather">Antarctic Weather
+            <hr>
+            <label for="question10">10. What civilization built the pyramids?</label>
+            <input type="radio" name="question10" value="Africans">Africans
+            <input type="radio" name="question10" value="Egyptians">Egyptians
+            <input type="radio" name="question10" value="Aztecs">Aztecs
+            <hr>
+            <label for="question11">11. How tall can trees grow?</label>
+            <input type="radio" name="question11" value="274 Feet">274 Feet
+            <input type="radio" name="question11" value="100 Feet">100 Feet
+            <input type="radio" name="question11" value="438 Feet">438 Feet
+            <hr>
+            <label for="question12">12. What is the small group of dots on someone's face called?</label>
+            <input type="radio" name="question12" value="Pimples">Pimples
+            <input type="radio" name="question12" value="Freckles">Freckles
+            <input type="radio" name="question12" value="Zits">Zits
+            <hr>
+            <label for="question13">13. What does the word "Fringe" mean?</label>
+            <input type="radio" name="question13" value="A border of an area or group">A border of an area or group
+            <input type="radio" name="question13" value="The innermost of an area or group">The innermost of an area or group
+            <input type="radio" name="question13" value="The outside of an area or group">The outside of an area or group
+            <hr>
+            <label for="question14">14. What does the word "Rational" mean?</label>
+            <input type="radio" name="question14" value="Reason or Logic">Reason or Logic
+            <input type="radio" name="question14" value="Unwillingness or Lost">Unwillingness or Lost
+            <input type="radio" name="question14" value="Hesitant or Unsure">Hesitant or Unsure
+            <hr>
+            <label for="question15">15. What is a color most used to edit out of a film or screen?</label>
+            <input type="radio" name="question15" value="Green">Green
+            <input type="radio" name="question15" value="Red">Red
+            <input type="radio" name="question15" value="Blue">Blue
+            <hr>
+
+            <button type="button" onclick="submitTest()">Submit</button>
+        </form>
+        <div id="results"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 LearnEase</p>
+    </footer>
+
+    <script>
+        function submitTest() {
+            // Implement logic to collect and process user's answers
+            // For demonstration purposes, let's assume correct answers
+            const correctAnswers = {
+                question1: 'Leonardo Da Vinci',
+                question2: 'A Study of colors',
+                question3: 'Vatican City',
+                question4: 'Venus',
+                question5: 'Found everywhere',
+                question6: 'Water',
+                question7: 'Tougher skin',
+                question8: 'Black',
+                question9: 'Very cold',
+                question10: 'Egyptians',
+                question11: '274 Feet',
+                question12: 'Freckles',
+                question13: 'A border of an area or group',
+                question14: 'Reason or Logic',
+                question15: 'Green',
+
+                // Add correct answers for more questions
+            };
+
+            // Get user's selected answers
+            const userAnswers = {};
+            document.querySelectorAll('input[type="radio"]:checked').forEach(input => {
+                const questionName = input.name;
+                const answerValue = input.value;
+                userAnswers[questionName] = answerValue;
+            });
+
+            // Compare user's answers with correct answers
+            const correctCount = Object.keys(correctAnswers).filter(question => {
+                return userAnswers[question] === correctAnswers[question];
+            }).length;
+
+            // Display results
+            const resultsContainer = document.getElementById('results');
+            resultsContainer.innerHTML = `<h2>Results</h2>`;
+            resultsContainer.style.display = 'block';
+
+            if (correctCount === Object.keys(correctAnswers).length) {
+                resultsContainer.innerHTML += '<p>Congratulations! You got all the answers correct!</p>';
+            } else {
+                resultsContainer.innerHTML += `<p>You got ${correctCount} out of ${Object.keys(correctAnswers).length} correct.</p>`;
+                resultsContainer.innerHTML += '<p>Correct Answers:</p>';
+                resultsContainer.innerHTML += '<ul>';
+                Object.keys(correctAnswers).forEach(question => {
+                    resultsContainer.innerHTML += `<li>${question}: ${correctAnswers[question]}</li>`;
+                });
+                resultsContainer.innerHTML += '</ul>';
+            }
+        }
+    </script>
+
+</body>
+</html>

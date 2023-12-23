@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test - LearnEase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0e7e7;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            padding: 25px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>LearnEase</h1>
+    </header>
+
+    <section>
+        <h2>English Test - Easy</h2>
+        <form id="testForm">
+            <label for="question1">1. What is the capital of France?</label>
+            <input type="radio" name="question1" value="paris"> Paris
+            <input type="radio" name="question1" value="london"> London
+            <input type="radio" name="question1" value="berlin"> Berlin
+
+            <label for="question2">2. Who wrote Romeo and Juliet?</label>
+            <input type="radio" name="question2" value="shakespeare"> Shakespeare
+            <input type="radio" name="question2" value="dickens"> Dickens
+            <input type="radio" name="question2" value="twain"> Twain
+
+            <!-- Add more questions as needed -->
+
+            <button type="button" onclick="submitTest()">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 LearnEase</p>
+    </footer>
+
+    <script>
+        function submitTest() {
+            // Implement logic to collect and process user's answers
+            alert("Test submitted! Implement logic to process answers.");
+        }
+    </script>
+
+</body>
+</html>

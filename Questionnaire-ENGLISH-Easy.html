@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test - LearnEase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0e7e7;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            padding: 70px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>LearnEase</h1>
+    </header>
+
+    <section>
+        <h2>English Test - Easy</h2>
+        <form id="testForm">
+            <label for="question1">1. How many legs do spiders have?</label>
+            <input type="radio" name="question1" value="Eight">Eight
+            <input type="radio" name="question1" value="Six">Six
+            <input type="radio" name="question1" value="Four">Four
+            <hr>
+            <label for="question2">2. How does rain happen?</label>
+            <input type="radio" name="question2" value="Saturation">Saturation
+            <input type="radio" name="question2" value="Condensation">Condensation
+            <input type="radio" name="question2" value="Evaporation">Evaporation
+            <hr>
+            <label for="question3">3. How do rainbows occur?</label>
+            <input type="radio" name="question3" value="Raindrop reflections">Raindrop reflections
+            <input type="radio" name="question3" value="Change in weather">Change in weather
+            <input type="radio" name="question3" value="Natural occurence">Natural occurence
+            <hr>
+            <label for="question4">4. How do clouds form?</label>
+            <input type="radio" name="question4" value="Steam">Steam
+            <input type="radio" name="question4" value="Water">Water
+            <input type="radio" name="question4" value="Air temperature">Air temperature
+            <hr>
+            <label for="question5">5. What color is water usually associated with?</label>
+            <input type="radio" name="question5" value="Blue">Blue
+            <input type="radio" name="question5" value="Red">Red
+            <input type="radio" name="question5" value="Green">Green
+            <hr>
+            <label for="question6">6. How does Fire usually occur?</label>
+            <input type="radio" name="question6" value="Combustion">Combustion
+            <input type="radio" name="question6" value="Flammable">Flammable
+            <input type="radio" name="question6" value="Forest Fires">Forest Fires
+            <hr>
+            <label for="question7">7. What can you cut with a pair of scissors?</label>
+            <input type="radio" name="question7" value="Paper">Paper
+            <input type="radio" name="question7" value="Rock">Rock
+            <input type="radio" name="question7" value="Metal Rod">Metal Rod
+            <hr>
+            <label for="question8">8. What is the fastest animal?</label>
+            <input type="radio" name="question8" value="Cheetah">Cheetah
+            <input type="radio" name="question8" value="Ostrich">Ostrich
+            <input type="radio" name="question8" value="Gorilla">Gorilla
+            <hr>
+            <label for="question9">9. What oozes out of our bodies if we have an injury?</label>
+            <input type="radio" name="question9" value="Blood">Blood
+            <input type="radio" name="question9" value="Water">Water
+            <input type="radio" name="question9" value="Milk">Milk
+            <hr>
+            <label for="question10">10. What energy does a phone use to charge?</label>
+            <input type="radio" name="question10" value="Electricity">Electricity
+            <input type="radio" name="question10" value="Fuel">Fuel
+            <input type="radio" name="question10" value="Oil">Oil
+            <hr>
+            <label for="question11">11. What happens when you rub your hands together?</label>
+            <input type="radio" name="question11" value="Creates heat">Creates heat
+            <input type="radio" name="question11" value="Creates moisture">Creates moisture
+            <input type="radio" name="question11" value="Creates electricity">Creates electricity
+            <hr>
+            <label for="question12">12. What do you usually take pictures with?</label>
+            <input type="radio" name="question12" value="Camera">Camera
+            <input type="radio" name="question12" value=Recorder>Recorder
+            <input type="radio" name="question12" value="Tape">Tape
+            <hr>
+            <label for="question13">13. Why do you cry?</label>
+            <input type="radio" name="question13" value="Feeling of Sadness">Feeling of Sadness
+            <input type="radio" name="question13" value="Feeling of Happiness">Feeling of Happiness
+            <input type="radio" name="question13" value="Feeling of Joy">Feeling of Joy
+            <hr>
+            <label for="question14">14. What action does a dog usually do when seeing something unfamiliar and possibly dangerous?</label>
+            <input type="radio" name="question14" value="Barking">Barking
+            <input type="radio" name="question14" value="Meowing">Meowing
+            <input type="radio" name="question14" value="Crawling">Crawling
+            <hr>
+            <label for="question15">15. What do you usually eat in the morning?</label>
+            <input type="radio" name="question15" value="Breakfast">Breakfast
+            <input type="radio" name="question15" value="Lunch">Lunch
+            <input type="radio" name="question15" value="Dinner">Dinner
+            <hr>
+
+            <button type="button" onclick="submitTest()">Submit</button>
+        </form>
+        <div id="results"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 LearnEase</p>
+    </footer>
+
+    <script>
+        function submitTest() {
+            // Implement logic to collect and process user's answers
+            // For demonstration purposes, let's assume correct answers
+            const correctAnswers = {
+                question1: 'Eight',
+                question2: 'Condensation',
+                question3: 'Raindrop reflections',
+                question4: 'Water',
+                question5: 'Blue',
+                question6: 'Combustion',
+                question7: 'Rock',
+                question8: 'Cheetah',
+                question9: 'Blood',
+                question10: 'Electricity',
+                question11: 'Creates heat',
+                question12: 'Camera',
+                question13: 'Feeling of Sadness',
+                question14: 'Barking',
+                question15: 'Breakfast',
+
+                // Add correct answers for more questions
+            };
+
+            // Get user's selected answers
+            const userAnswers = {};
+            document.querySelectorAll('input[type="radio"]:checked').forEach(input => {
+                const questionName = input.name;
+                const answerValue = input.value;
+                userAnswers[questionName] = answerValue;
+            });
+
+            // Compare user's answers with correct answers
+            const correctCount = Object.keys(correctAnswers).filter(question => {
+                return userAnswers[question] === correctAnswers[question];
+            }).length;
+
+            // Display results
+            const resultsContainer = document.getElementById('results');
+            resultsContainer.innerHTML = `<h2>Results</h2>`;
+            resultsContainer.style.display = 'block';
+
+            if (correctCount === Object.keys(correctAnswers).length) {
+                resultsContainer.innerHTML += '<p>Congratulations! You got all the answers correct!</p>';
+            } else {
+                resultsContainer.innerHTML += `<p>You got ${correctCount} out of ${Object.keys(correctAnswers).length} correct.</p>`;
+                resultsContainer.innerHTML += '<p>Correct Answers:</p>';
+                resultsContainer.innerHTML += '<ul>';
+                Object.keys(correctAnswers).forEach(question => {
+                    resultsContainer.innerHTML += `<li>${question}: ${correctAnswers[question]}</li>`;
+                });
+                resultsContainer.innerHTML += '</ul>';
+            }
+        }
+    </script>
+
+</body>
+</html>
